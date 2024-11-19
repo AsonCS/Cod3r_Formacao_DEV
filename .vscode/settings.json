@@ -3,10 +3,13 @@
         "typescript": "npx tsx",
     },
     "cSpell.words": [
+        "Ason",
+        "Cabecalho",
         "Excalidraw",
         "maiusculas",
         "numeros",
         "qtde",
+        "Rodape",
         "tailwindcss"
     ]
 }
