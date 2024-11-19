@@ -6,6 +6,7 @@
         "Excalidraw",
         "maiusculas",
         "numeros",
-        "qtde"
+        "qtde",
+        "tailwindcss"
     ]
 }
