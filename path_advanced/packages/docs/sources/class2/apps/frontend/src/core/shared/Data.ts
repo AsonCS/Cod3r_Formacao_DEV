@@ -1,7 +1,5 @@
 export default class Data {
-  static formatar(
-    data: Date
-  ): string {
+  static formatar(data: Date): string {
     const pad = (n: number) => n.toString().padStart(2, "0");
 
     const d = data ?? new Date();
@@ -12,18 +10,6 @@ export default class Data {
     const minuto = pad(d.getMinutes());
 
     return `${ano}-${mes}-${dia}T${hora}:${minuto}`;
-  }
-
-  static toDateString(
-    data: Date
-  ): string {
-    return data.toLocaleDateString()
-  }
-
-  static toTimeString(
-    data: Date
-  ): string {
-    return data.toLocaleTimeString()
   }
 
   static desformatar(data: string): Date {
