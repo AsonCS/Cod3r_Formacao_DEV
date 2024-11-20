@@ -1,12 +1,6 @@
 <script>
 	import Menu from './Menu.svelte';
 	import MenuItem from './MenuItem.svelte';
-
-	function toggleClick() {
-		const container = document.getElementById('aside_menu-container');
-		// @ts-ignore
-		container.style.display = container.style.display == 'none' ? 'flex' : 'none';
-	}
 </script>
 
 <aside
@@ -20,20 +14,6 @@
 	"
 	id="aside_menu"
 >
-	<button
-		class="
-			bg-sky-600
-			p-1
-			rounded-lg
-			self-start
-
-			md:hidden
-		"
-		id="aside_menu-toggle"
-		onclick={toggleClick}
-	>
-		Toggle
-	</button>
 	<div
 		class="
 			flex
@@ -50,9 +30,9 @@
 		</Menu>
 
 		<Menu titulo="Principais Autores">
-			<MenuItem text="J.K. Rowling" />
-			<MenuItem text="L.R.R. Tolkien" />
-			<MenuItem text="George R.R. Martin" />
+			<MenuItem href="/authors/j-k-rowling" text="J.K. Rowling" />
+			<MenuItem href="/authors/j-r-r-tolkien" text="L.R.R. Tolkien" />
+			<MenuItem href="/authors/george-r-r-martin" text="George R.R. Martin" />
 		</Menu>
 
 		<Menu titulo="Outras Categorias">
