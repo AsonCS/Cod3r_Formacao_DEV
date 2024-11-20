@@ -1,0 +1,15 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.font-caveat {
+    font-family: "Caveat", cursive;
+}
+
+.font-dancing-script {
+    font-family: "Dancing Script", serif;
+}
+
+.font-sour-gummy {
+    font-family: "Sour Gummy", sans-serif;
+}
