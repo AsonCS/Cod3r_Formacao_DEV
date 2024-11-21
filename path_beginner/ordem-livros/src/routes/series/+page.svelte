@@ -1,7 +1,7 @@
 <script>
-	import ItemAutor from '../../components/autor/ItemAutor.svelte';
+	import ItemSerie from '../../components/serie/ItemSerie.svelte';
 	import Titulo from '../../components/shared/Titulo.svelte';
-	import autores from '../../constants/autores';
+	import series from '../../constants/series';
 </script>
 
 <div
@@ -17,8 +17,8 @@
     "
 >
 	<Titulo
-		principal="Autores"
-		secundario="Conheça os autores que escrevem as histórias que você ama!"
+		principal="Series"
+		secundario="Conheça as series que você ama!"
 	/>
 
 	<div
@@ -30,8 +30,8 @@
             lg:grid-cols-2
         "
 	>
-		{#each autores as autor}
-			<ItemAutor author={autor} />
+		{#each series as serie}
+			<ItemSerie serie={serie} />
 		{/each}
 	</div>
 </div>

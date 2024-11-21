@@ -23,6 +23,9 @@
 		{href}
 		{target}
 	>
-		{text}
+		<slot />
+		<span>
+			{text}
+		</span>
 	</a>
 </li>

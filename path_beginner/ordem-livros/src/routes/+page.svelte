@@ -1,10 +1,16 @@
+<script>
+	import ItemSerie from '../components/serie/ItemSerie.svelte';
+import series from '../constants/series';
+</script>
+
 <main
 	class="
-		border
-		border-red-700
 		flex
 		flex-col
+		gap-5
 	"
 >
-	Main
+	{#each series as serie}
+		<ItemSerie serie={serie} />
+	{/each}
 </main>
