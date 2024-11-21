@@ -7,16 +7,13 @@
 		IconFriends,
 		IconHome,
 		IconRss,
-		IconSquare,
-		IconSquare0,
-		IconSquare1,
-		IconSquareF0,
 		IconUsers
 	} from '@tabler/icons-svelte';
 
 	import autores from '../../constants/autores';
 	import Menu from './Menu.svelte';
 	import MenuItem from './MenuItem.svelte';
+	import { AUTHOR, AUTHORS, AUTHORS_EXT, HOME, SERIE } from '../../constants/routes';
 
 	const topAuthors: any[] = [];
 	while (topAuthors.length < 5) {
@@ -45,23 +42,23 @@
 		id="aside_menu-container"
 	>
 		<Menu titulo="Navegação">
-			<MenuItem href="/" text="Início">
+			<MenuItem href={HOME} text="Início">
 				<IconHome size={20} />
 			</MenuItem>
 			<MenuItem text="Personagens">
 				<IconFriends size={20} />
 			</MenuItem>
-			<MenuItem href="/authors" text="Autores">
+			<MenuItem href="{AUTHOR}" text="Autores">
 				<IconUsers size={20} />
 			</MenuItem>
-			<MenuItem href="/series" text="Séries">
+			<MenuItem href="{SERIE}" text="Séries">
 				<IconBooks size={20} />
 			</MenuItem>
 		</Menu>
 
 		<Menu titulo="Principais Autores">
 			{#each topAuthors as author, idx}
-				<MenuItem href={`/authors/${author.id}`} text={author.nome}>
+				<MenuItem href="{AUTHORS}{author.id}{AUTHORS_EXT}" text={author.nome}>
 					<span
 						class="
 							border-b-2

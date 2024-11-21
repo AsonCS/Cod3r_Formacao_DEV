@@ -1,4 +1,8 @@
-<a href="/">
+<script>
+	import { HOME } from '../../constants/routes';
+</script>
+
+<a href={HOME}>
 	<h1
 		class="
             flex

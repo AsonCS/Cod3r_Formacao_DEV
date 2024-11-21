@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { AUTHORS, AUTHORS_EXT } from "../../constants/routes";
+
 	export let author: any = null;
 </script>
 
@@ -13,7 +15,7 @@
             relative
             rounded-md
         "
-		href={`/authors/${author.id}`}
+		href="{AUTHORS}{author.id}{AUTHORS_EXT}"
 	>
 		<img
 			alt={`Foto de ${author.nome}`}

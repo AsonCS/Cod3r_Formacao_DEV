@@ -1,4 +1,4 @@
-import{a as x,t as v}from"./disclose-version.BePWVN5T.js";import"./legacy.COuAM1YB.js";import{t as d,c as e,r,s as u}from"./runtime.C3JS33kB.js";import{s as o}from"./render.B4FoGs1w.js";import{p}from"./props.BaCyDQt9.js";var h=v(`<div class="
+import{a as x,t as v}from"./disclose-version.DJ85z-SI.js";import"./legacy.CoaRLUsx.js";import{t as d,c as e,r,s as u}from"./runtime.BM7WB-jH.js";import{s as o}from"./render.DShMk7TK.js";import{p}from"./props.D4wnE-9g.js";var h=v(`<div class="
         flex
         flex-col
     "><h1 class="

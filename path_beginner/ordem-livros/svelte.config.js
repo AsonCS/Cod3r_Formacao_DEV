@@ -20,7 +20,13 @@ const config = {
 			precompress: false,
 			strict: true,
 			trailingSlash: 'always'
-		})
+		}),
+		prerender: {
+			handleHttpError: ({ path, referrer, message }) => {
+				// ignore deliberate link to shiny 404 page
+				return;
+			}
+		}
 	}
 };
 

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { SERIES, SERIES_EXT } from "../../constants/routes";
+
 	export let serie: any = null;
 </script>
 
@@ -12,7 +14,7 @@
             overflow-hidden
             rounded-md
         "
-		href="/series/{serie.id}"
+		href="{SERIES}{serie.id}{SERIES_EXT}"
 	>
 		<img
 			alt="Imagem da série {serie.titulo}"

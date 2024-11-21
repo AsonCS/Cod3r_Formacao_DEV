@@ -1,4 +1,4 @@
-import{a as d,t as m}from"../chunks/disclose-version.BePWVN5T.js";import"../chunks/legacy.COuAM1YB.js";import{c as p,s as c,g as l,r as a}from"../chunks/runtime.C3JS33kB.js";import{e as n,i as g}from"../chunks/each.ND-Woi6p.js";import{I as v}from"../chunks/ItemSerie.CtW9Pu7n.js";import{T as f}from"../chunks/Titulo.b6cSH3zp.js";import{s as u}from"../chunks/series.DZqW-sO0.js";var b=m(`<div class="
+import{a as d,t as m}from"../chunks/disclose-version.DJ85z-SI.js";import"../chunks/legacy.CoaRLUsx.js";import{c as p,s as c,g as l,r as a}from"../chunks/runtime.BM7WB-jH.js";import{e as n,i as g}from"../chunks/routes.DZtBvaoF.js";import{I as v}from"../chunks/ItemSerie.fknQmNfX.js";import{T as f}from"../chunks/Titulo.CgeB7wb9.js";import{s as u}from"../chunks/series.bvFS7sk2.js";var b=m(`<div class="
         border
 		border-zinc-800
         flex

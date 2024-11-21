@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { AUTHORS, AUTHORS_EXT } from '../../constants/routes';
 	import ItemLivro from './ItemLivro.svelte';
 
 	export let serie: any = null;
@@ -36,7 +37,7 @@
                     text-sm
                     text-zinc-400
                 "
-				href="/authors/{serie.autor.id}"
+				href="{AUTHORS}{serie.autor.id}{AUTHORS_EXT}"
 			>
 				{serie.autor.nome}
 			</a>
