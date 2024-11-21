@@ -66,7 +66,7 @@ import{c as M,a as d,k as Y,t as P}from"../chunks/disclose-version.DJ85z-SI.js";
         md:w-10
         lg:h-14
         lg:w-14
-    " src="/logo.png"> Ordem dos Livros</h1></a>`);function Mt(o){var t=yt();d(o,t)}var Pt=P(`<header class="
+    " src="/Cod3r_Formacao_DEV/logo.png"> Ordem dos Livros</h1></a>`);function Mt(o){var t=yt();d(o,t)}var Pt=P(`<header class="
         p-2
         text-center
 
