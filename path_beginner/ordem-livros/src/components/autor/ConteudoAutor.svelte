@@ -15,6 +15,7 @@
 		<img
 			alt={`Foto de ${author.nome}`}
 			class="
+                h-96
                 w-full
                 object-cover
                 rounded-md

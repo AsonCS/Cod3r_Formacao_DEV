@@ -119,6 +119,147 @@ George R.R. Martin é amplamente reconhecido como um dos mais influentes autores
 > *"Um leitor vive mil vidas antes de morrer. O homem que nunca lê vive apenas uma."* - George R.R. Martin
         `,
   },
+  {
+    "id": "stephen-king",
+    "nome": "Stephen King",
+    "imagem": "https://i.guim.co.uk/img/media/56be7b100f9704b507dbac33715297ae2f5bd11e/0_491_4024_2414/master/4024.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=79a480ee23f06486c53dbc27894dc3bd",
+    "biografia": `
+# Stephen King
+
+**Stephen Edwin King** is an American author of horror, suspense, science fiction, and fantasy. Often called the "King of Horror", King is one of the most widely read authors in the world and has written more than 60 books. 
+
+## Early Life and Career
+Born in Portland, Maine, on September 21, 1947, King began writing at a young age. He sold his first short story at the age of 19 and published his first novel, *Carrie*, in 1974. *Carrie* was a critical and commercial success and established King as a major figure in horror fiction.
+
+## A Prolific Career
+Throughout his career, King has produced a vast and varied body of work. Some of his most famous novels include *The Shining*, *It*, *Misery*, *The Stand*, and *11/22/63*. King's novels often explore themes of small-town America, the supernatural, and the darker aspects of human nature.
+
+## Adaptations
+Many of King's novels have been adapted into successful films, television series, and comic books. Notable adaptations include Stanley Kubrick's film adaptation of *The Shining*, the miniseries *It*, and the film *Misery*. 
+
+## Influences and Legacy
+King has cited many influences on his work, including Richard Matheson, H.P. Lovecraft, and John D. MacDonald. He is often compared to Edgar Allan Poe for his ability to create suspense and terror. King's work has inspired countless other writers and has helped to popularize the horror genre.
+
+## Other Ventures
+In addition to his novels, King has written nonfiction books, screenplays, and comic books. He is also a co-owner of the baseball team the Portland Sea Dogs. 
+
+---
+> *"The most terrible monsters are human."* - Stephen King
+    `
+  },
+  {
+    "id": "isaac-asimov",
+    "nome": "Isaac Asimov",
+    "imagem": "https://cdn.britannica.com/82/195182-050-97684526/Isaac-Asimov-1979.jpg",
+    "biografia": `
+# Isaac Asimov
+
+**Isaac Asimov** was a Russian-American writer and professor of biochemistry at Boston University. He was one of the most prolific writers of all time, having written or edited more than 500 books.
+
+Asimov was best known for his works of science fiction, history, and science. His most famous works include the *Foundation* series and the *Robot* series.
+
+Asimov was a strong proponent of science and reason. He often wrote about the future and the potential dangers of technology. He was also a gifted storyteller, and his books are often filled with humor and wit.
+    `
+  },
+  {
+    "id": "agatha-christie",
+    "nome": "Agatha Christie",
+    "imagem": "https://www.adazing.com/wp-content/uploads/2024/03/0008.png",
+    "biografia": `
+# Agatha Christie
+
+**Agatha Christie** was an English writer known for her 66 detective novels and 14 short story collections, particularly those  
+involving detectives Hercule Poirot and Miss Marple. Her novel *And Then There Were None* is often considered her greatest work.
+
+Christie's novels have been adapted for film, television, and theatre. She is one of the best-selling authors of all time, and her books continue to be popular today.
+  `
+  },
+  {
+    "id": "jane-austen",
+    "nome": "Jane Austen",
+    "imagem": "https://kindersleysocial.ca/wp-content/uploads/2021/09/jane-austen.jpg",
+    "biografia": `
+# Jane Austen
+
+**Jane Austen** was an English novelist known for her insightful social commentary and witty dialogue. Her novels, such as *Pride and Prejudice* and *Sense and Sensibility*, are beloved classics that continue to be popular today. 
+
+Austen's novels often explore themes of love, marriage, and social class. Her characters are complex and believable, and her writing is both humorous and thought-provoking.
+  `
+  },
+  {
+    "id": "william-shakespeare",
+    "nome": "William Shakespeare",
+    "imagem": "https://hips.hearstapps.com/hmg-prod/images/william-shakespeare-194895-1-402.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*",
+    "biografia": `
+# William Shakespeare
+
+**William Shakespeare** was an English playwright, poet, and actor, widely regarded as the greatest writer in the English language and the world's greatest dramatist. His plays have been translated into every major living language and are performed more often than those of any other playwright.  
+
+
+Shakespeare's plays explore a wide range of human emotions and experiences. His characters are complex and memorable, and his language is both beautiful and powerful.
+  `
+  },
+  {
+    "id": "fyodor-dostoevsky",
+    "nome": "Fyodor Dostoevsky",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/7/78/Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg",
+    "biografia": `
+# Fyodor Dostoevsky
+
+**Fyodor Dostoevsky** was a Russian novelist, short story writer, essayist, and philosopher. His novels explore the psychological and spiritual depths of his characters.
+
+Dostoevsky's most famous works include *Crime and Punishment*, *The Idiot*, and *The Brothers Karamazov*. His novels are often considered to be some of the greatest works of literature ever written.
+  `
+  },
+  {
+    "id": "virginia-woolf",
+    "nome": "Virginia Woolf",
+    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh89FBrmde-xjYGK2KamcDZgimuQwGPbjQhA&s",
+    "biografia": `
+# Virginia Woolf
+
+**Virginia Woolf** was an English writer and one of the foremost modernist literary figures of the 20th century. Known for both her novels and essays, Woolf is considered one of the pioneers of stream-of-consciousness fiction. 
+
+Her most famous works include *Mrs. Dalloway*, *To the Lighthouse*, and *Orlando*. Woolf's writing is often experimental and innovative, and she is considered one of the most influential writers of the 20th century.
+  `
+  },
+  {
+    "id": "gabriel-garcia-marquez",
+    "nome": "Gabriel García Márquez",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Gabriel_Garcia_Marquez.jpg",
+    "biografia": `
+# Gabriel García Márquez
+
+**Gabriel García Márquez** was a Colombian novelist, short-story writer, screenwriter, and journalist.  
+He was one of the most significant writers of the 20th century, and his work is often cited as a major influence on magical realism. 
+
+Márquez's most famous work is *One Hundred Years of Solitude*, which chronicles the history of the Buendía family. Other notable works include *Love in the Time of Cholera* and *Chronicle of a Death Foretold*.
+  `
+  },
+  {
+    "id": "haruki-murakami",
+    "nome": "Haruki Murakami",
+    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAAY2X7dV_c7R1YLbCBH1OTHts_jHZ3j8ZZw&s",
+    "biografia": `
+# Haruki Murakami
+
+**Haruki Murakami** is a Japanese novelist and short story writer known for his unique blend of realism and fantasy. His novels often explore themes of loneliness, alienation, and the search for meaning. 
+
+Murakami's most famous works include *Norwegian Wood*, *The Wind-Up Bird Chronicle*, and *Kafka on the Shore*. His books have been translated into many languages and have been widely acclaimed by critics.
+  `
+  },
+  {
+    "id": "toni-morrison",
+    "nome": "Toni Morrison",
+    "imagem": "https://cdn.britannica.com/88/244188-050-F66D3342/Toni-Morrison-1993.jpg",
+    "biografia": `
+# Toni Morrison
+
+**Toni Morrison** was an American novelist, editor, and teacher. She was awarded the Nobel Prize in Literature in 1993. Her novels often explore themes of race, gender, and class. 
+
+Morrison's most famous works include *Beloved*, *Song of Solomon*, and *The Bluest Eye*. Her books have been widely acclaimed by critics and have had a significant impact on American literature.
+  `
+  }
 ];
 
 export default autores;

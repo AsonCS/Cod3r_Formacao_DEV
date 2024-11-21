@@ -1,17 +1,24 @@
-<script>
+<script lang="ts">
+	import autores from '../../constants/autores';
 	import Menu from './Menu.svelte';
 	import MenuItem from './MenuItem.svelte';
+
+	const topAuthors: any[] = [];
+	while (topAuthors.length < 5) {
+		const idx = Math.floor(Math.random() * 10);
+		if (!topAuthors.find((a) => a.id === autores[idx].id)) {
+			topAuthors.push(autores[idx]);
+		}
+	}
 </script>
 
 <aside
-	class="
+	class={`
 		border
 		border-zinc-800
 		p-2
 		rounded-lg
-
-		md:basis-1/4
-	"
+	`}
 	id="aside_menu"
 >
 	<div
@@ -30,9 +37,9 @@
 		</Menu>
 
 		<Menu titulo="Principais Autores">
-			<MenuItem href="/authors/j-k-rowling" text="J.K. Rowling" />
-			<MenuItem href="/authors/j-r-r-tolkien" text="L.R.R. Tolkien" />
-			<MenuItem href="/authors/george-r-r-martin" text="George R.R. Martin" />
+			{#each topAuthors as author}
+				<MenuItem href={`/authors/${author.id}`} text={author.nome} />
+			{/each}
 		</Menu>
 
 		<Menu titulo="Outras Categorias">

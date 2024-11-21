@@ -29,8 +29,20 @@
             md:flex-row-reverse
         "
 	>
-		<AreaLateral />
-		<slot />
+		<div
+			class="
+                md:basis-1/4
+            "
+		>
+			<AreaLateral />
+		</div>
+		<div
+			class="
+                md:basis-3/4
+            "
+		>
+			<slot />
+		</div>
 	</div>
 	<Rodape />
 </div>
