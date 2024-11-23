@@ -3,6 +3,7 @@
         "typescript": "npx tsx",
     },
     "cSpell.words": [
+        "appsdev",
         "Ason",
         "botao",
         "Cabecalho",
@@ -15,6 +16,7 @@
         "Informacoes",
         "maiusculas",
         "numeros",
+        "packagesdev",
         "qtde",
         "Rodape",
         "secundario",
