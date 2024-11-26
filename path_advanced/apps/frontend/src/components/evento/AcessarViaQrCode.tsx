@@ -1,5 +1,6 @@
-import { Evento } from "@/core";
 import QRCode from "react-qr-code";
+
+import { Evento } from "core";
 
 export interface Props {
     event: Evento

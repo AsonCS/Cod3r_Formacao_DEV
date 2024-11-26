@@ -1,4 +1,4 @@
-import { Data, Evento } from "@/core"
+import { Data, Evento } from "core"
 import Informacao from "../shared/Informacao"
 
 export interface Props {
