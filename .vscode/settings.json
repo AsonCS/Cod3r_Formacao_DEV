@@ -3,6 +3,7 @@
         "typescript": "npx tsx",
     },
     "cSpell.words": [
+        "appsdev",
         "Ason",
         "botao",
         "Cabecalho",
@@ -15,11 +16,21 @@
         "Informacoes",
         "maiusculas",
         "numeros",
+        "packagesdev",
         "qtde",
         "Rodape",
         "secundario",
         "tabler",
         "tailwindcss",
         "Youtube"
-    ]
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/node_modules": true
+    }
 }

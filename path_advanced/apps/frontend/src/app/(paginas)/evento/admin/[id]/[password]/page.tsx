@@ -1,8 +1,9 @@
 "use client"
+import { use, useCallback, useEffect, useState } from "react"
+import { Evento, eventos } from "core"
+
 import DashboardEvento from "@/components/evento/DashboardEvento"
 import FormSenhaEvento from "@/components/evento/FormSenhaEvento"
-import { Evento, eventos } from "@/core"
-import { use, useCallback, useEffect, useState } from "react"
 
 interface Props {
     params: Promise<unknown>

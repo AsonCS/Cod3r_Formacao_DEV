@@ -1,4 +1,4 @@
-import { Evento } from "@/core"
+import { Evento } from "core"
 import InformacoesEvento from "./InformacoesEvento"
 import AcessarViaQrCode from "./AcessarViaQrCode"
 import Estatistica from "../shared/Estatistica"
