@@ -1,6 +1,7 @@
 {
   "name": "events",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "dev": "run-p packages:* apps:*",
     "apps:backend": "cd apps/backend && npm run dev",
