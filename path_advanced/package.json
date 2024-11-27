@@ -6,6 +6,7 @@
     "dev": "run-p packages:* apps:*",
     "apps:backend": "cd apps/backend && npm run dev",
     "apps:frontend": "cd apps/frontend && npm run dev",
+    "apps:mobile": "cd apps/mobile && npm run dev",
     "packages:core": "cd packages/core && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
