@@ -1,13 +1,15 @@
-import React from "react";
+import React from 'react'
 
-import Pagina from "@/components/template/Pagina";
+import Pagina from '@/components/template/Pagina'
+import { ProvedorContextoEvento } from '@/data/contexts/ContextoEvento'
+import { ProvedorContextoMensagens } from '@/data/contexts/ContextoMensagens'
 
-export default function Layout(
-    props: React.PropsWithChildren
-) {
+export default function Layout(props: React.PropsWithChildren) {
     return (
-        <Pagina>
-            {props.children}
-        </Pagina>
+        <ProvedorContextoMensagens>
+            <ProvedorContextoEvento>
+                <Pagina>{props.children}</Pagina>
+            </ProvedorContextoEvento>
+        </ProvedorContextoMensagens>
     )
 }

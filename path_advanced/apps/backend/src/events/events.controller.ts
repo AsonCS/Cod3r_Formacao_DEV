@@ -15,7 +15,7 @@ export class EventsController {
 
     @Post('acessar')
     async acessarEvento(@Body() dados: { id: string; senha: string }) {
-        const event = await this.db.buscarPorId(dados.id)
+        const event = await this.db.buscarPorId(dados.id, true)
 
         if (!event) {
             throw new HttpException('Evento não encontrado', 400)
@@ -69,6 +69,7 @@ export class EventsController {
 
         const eventComplete = complementarEvento(this.deserializar(evento))
         await this.db.salvar(eventComplete)
+        return this.serializar(eventComplete);
     }
 
     @Get('validar/:alias/:id')
