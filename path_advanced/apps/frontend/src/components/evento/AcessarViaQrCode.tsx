@@ -19,7 +19,7 @@ export default function AcessarViaQrCode(
                 gap-4
                 items-center
                 justify-center
-                px-4
+                p-4
             "
         >
             <span

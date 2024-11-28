@@ -1,14 +1,13 @@
-import { Data, Evento } from "core"
-import Informacao from "../shared/Informacao"
+import { Data, Evento } from 'core'
+import Informacao from '../shared/Informacao'
 
 export interface Props {
     className?: string
+    esconderNome?: boolean
     event: Evento
 }
 
-export default function InformacoesEvento(
-    props: Props
-) {
+export default function InformacoesEvento(props: Props) {
     return (
         <div
             className={`
@@ -19,36 +18,38 @@ export default function InformacoesEvento(
                 ${props.className ?? ''}
             `}
         >
-            <div
-                className="
-                    border
-                    border-zinc-800
-                    flex
-                    flex-1
-                    items-center
-                    gap-4
-                    rounded-lg
-                    px-6
-                    py-3
-                "
-            >
-                <span
+            {props.esconderNome ? null : (
+                <div
                     className="
-                        font-black
-                        text-2xl
+                        border
+                        border-zinc-800
+                        flex
+                        flex-1
+                        items-center
+                        gap-4
+                        rounded-lg
+                        px-6
+                        py-3
                     "
                 >
-                    {props.event.alias}:
-                </span>
-                <span
-                    className="
-                        font-black
-                        text-zinc-300
-                    "
-                >
-                    {props.event.nome}
-                </span>
-            </div>
+                    <span
+                        className="
+                            font-black
+                            text-2xl
+                        "
+                    >
+                        {props.event.alias}:
+                    </span>
+                    <span
+                        className="
+                            font-black
+                            text-zinc-300
+                        "
+                    >
+                        {props.event.nome}
+                    </span>
+                </div>
+            )}
             <div
                 className="
                     flex
@@ -56,17 +57,13 @@ export default function InformacoesEvento(
                 "
             >
                 <Informacao label="Data:">
-                    {Data.toDateString(props.event.data)}
+                    {Data.toDateString(new Date(props.event.data))}
                     {' às '}
-                    {Data.toTimeString(props.event.data)}
+                    {Data.toTimeString(new Date(props.event.data))}
                 </Informacao>
-                <Informacao label="Local:">
-                    {props.event.local}
-                </Informacao>
+                <Informacao label="Local:">{props.event.local}</Informacao>
             </div>
-            <Informacao label="Descrição:">
-                {props.event.descricao}
-            </Informacao>
+            <Informacao label="Descrição:">{props.event.descricao}</Informacao>
         </div>
     )
 }

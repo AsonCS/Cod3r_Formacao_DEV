@@ -1,29 +1,21 @@
-import { Evento } from "core"
-import InformacoesEvento from "./InformacoesEvento"
-import AcessarViaQrCode from "./AcessarViaQrCode"
-import Estatistica from "../shared/Estatistica"
-import ListaConvidados from "./ListaConvidados"
+import { Evento } from 'core'
+import InformacoesEvento from './InformacoesEvento'
+import AcessarViaQrCode from './AcessarViaQrCode'
+import Estatistica from '../shared/Estatistica'
+import ListaConvidados from './ListaConvidados'
 
 export interface Props {
     event: Evento
+    atualizarListaConvidados: () => void
 }
 
-export default function DashboardEvento(
-    props: Props
-) {
-    const ausentes = props.event
-        ?.convidados
-        ?.filter(c => !c.confirmado)
-        ?? []
-    const presents = props.event
-        ?.convidados
-        ?.filter(c => c.confirmado)
-        ?? []
+export default function DashboardEvento(props: Props) {
+    const ausentes = props.event?.convidados?.filter((c) => !c.confirmado) ?? []
+    const presents = props.event?.convidados?.filter((c) => c.confirmado) ?? []
 
-    const totalGeral = presents
-        ?.reduce((total, c) => {
-            return total + c.qtdeAcompanhantes + 1
-        }, 0)
+    const totalGeral = presents?.reduce((total, c) => {
+        return total + c.qtdeAcompanhantes + 1
+    }, 0)
 
     return (
         <div
@@ -75,10 +67,9 @@ export default function DashboardEvento(
                     mt-12
                     self-end
                 "
+                onClick={props.atualizarListaConvidados}
             >
-                <span>
-                    Atualizar Lista de Convidados
-                </span>
+                <span>Atualizar Lista de Convidados</span>
             </button>
 
             <span
@@ -92,9 +83,7 @@ export default function DashboardEvento(
             >
                 Convidados que confirmaram PRESENÇA
             </span>
-            <ListaConvidados
-                convidados={presents}
-            />
+            <ListaConvidados convidados={presents} />
             <span
                 className="
                     flex
@@ -106,9 +95,7 @@ export default function DashboardEvento(
             >
                 Convidados que confirmaram AUSÊNCIA
             </span>
-            <ListaConvidados
-                convidados={ausentes}
-            />
+            <ListaConvidados convidados={ausentes} />
         </div>
     )
 }

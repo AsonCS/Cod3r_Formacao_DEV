@@ -69,6 +69,7 @@ export class EventsController {
 
         const eventComplete = complementarEvento(this.deserializar(evento))
         await this.db.salvar(eventComplete)
+        return this.serializar(eventComplete);
     }
 
     @Get('validar/:alias/:id')

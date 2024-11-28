@@ -22,11 +22,11 @@ export default function useApi() {
     return { httpGet, httpPost }
 }
 
-function extract(res: Response) {
+async function extract(res: Response) {
     let content: any
 
     try {
-        content = res.json()
+        content = await res.json()
     } catch (e) {
         if (!res.ok) {
             throw new Error(`Unexpected error ${res.status}`)
