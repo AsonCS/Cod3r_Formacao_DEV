@@ -9,9 +9,21 @@ export class Events implements Path {
     }
 
     body?: any
-    path = 'ping'
+    path = '/events'
+}
+
+export class EventsAccess implements Path {
+    constructor(id: string, password: string) {
+        this.body = {
+            id,
+            senha: password,
+        }
+    }
+
+    body?: any
+    path = '/events/acessar'
 }
 
 export class Ping implements Path {
-    path = 'ping'
+    path = '/ping'
 }

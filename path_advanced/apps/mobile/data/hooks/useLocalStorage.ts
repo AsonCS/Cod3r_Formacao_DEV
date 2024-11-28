@@ -10,7 +10,7 @@ export default function useLocalStorage() {
     const remove = useCallback(async function (key: string) {
         await AsyncStorage.removeItem(key)
     }, [])
-    const save = useCallback(async function (key: string, value: string) {
+    const save = useCallback(async function (key: string, value: any) {
         await AsyncStorage.setItem(key, JSON.stringify(value))
     }, [])
 

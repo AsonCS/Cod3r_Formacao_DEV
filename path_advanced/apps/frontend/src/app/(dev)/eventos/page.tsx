@@ -10,7 +10,9 @@ export default function PaginaEventos() {
             className="
                 gap-4
                 grid
-                grid-cols-3
+                grid-cols-1
+
+                md:grid-cols-3
             "
         >
             {eventos.map((evento) => (

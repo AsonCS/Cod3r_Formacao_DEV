@@ -1,5 +1,15 @@
 {
-    "cSpell.words": [],
+    "cSpell.words": [
+        "descricao",
+        "Estatistica",
+        "Informacao",
+        "Informacoes",
+        "permissao",
+        "Pressable",
+        "qrcode",
+        "qtde",
+        "Secao"
+    ],
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
