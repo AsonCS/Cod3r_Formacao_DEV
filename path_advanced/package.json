@@ -12,7 +12,7 @@
         "build:apps:frontend": "cd apps/frontend && npm run build",
         "build:packages:core": "cd packages/core && npm run build",
         "serve": "run-s build serve:apps:*",
-        "serve:apps:frontend": "cd apps/frontend && npm run start",
+        "serve:apps:frontend": "cd apps/frontend && npm run serve",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
