@@ -1,10 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
-import QRCode from "react-qr-code";
+'use client'
 
-import { eventos } from "core";
+import useApiEvents from '@/data/hooks/useApiEvents'
+import Image from 'next/image'
+import Link from 'next/link'
+import QRCode from 'react-qr-code'
 
 export default function PaginaEventos() {
+    const events = useApiEvents()
+
     return (
         <div
             className="
@@ -15,7 +18,7 @@ export default function PaginaEventos() {
                 md:grid-cols-3
             "
         >
-            {eventos.map((evento) => (
+            {events.map((evento) => (
                 <div
                     className="
                         bg-zinc-800
@@ -75,7 +78,7 @@ export default function PaginaEventos() {
                             "
                             value={JSON.stringify({
                                 id: evento.id,
-                                senha: evento.senha
+                                senha: evento.senha,
                             })}
                         />
                         <div

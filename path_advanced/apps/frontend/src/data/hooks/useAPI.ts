@@ -32,9 +32,12 @@ export default function useAPI() {
             conteudo = await reposta.json()
         } catch (e: any) {
             if (!reposta.ok) {
-                throw new Error(
-                    `Ocorreu um erro inesperado com status ${reposta.status}.`
+                const error = new Error(
+                    `Ocorreu um erro inesperado com status ${reposta.status}.`,
+                    { cause: e }
                 )
+                console.error(error)
+                throw error
             }
             return null
         }

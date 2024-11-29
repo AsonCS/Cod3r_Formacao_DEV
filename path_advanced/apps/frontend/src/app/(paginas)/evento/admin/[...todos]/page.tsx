@@ -1,10 +1,12 @@
 'use client'
 import { use, useCallback, useEffect, useState } from 'react'
-import { Evento, eventos } from 'core'
+
+import { Evento } from 'core'
 
 import DashboardEvento from '@/components/evento/DashboardEvento'
 import FormSenhaEvento from '@/components/evento/FormSenhaEvento'
 import useAPI from '@/data/hooks/useAPI'
+import useApiEvents from '@/data/hooks/useApiEvents'
 
 interface Props {
     params: any
@@ -12,17 +14,16 @@ interface Props {
 
 export default function PaginaAdminEvento(props: Props) {
     const { httpPost } = useAPI()
+    const events = useApiEvents()
     const [id, passwordParam] = (use(props.params) as any).todos
 
     const [event, setEvent] = useState<Evento | null>(null)
     const [password, setPassword] = useState(passwordParam ?? '')
 
     const loadEvent = useCallback(() => {
-        const event = eventos.find(
-            (ev) => ev.id === id && ev.senha === password
-        )
+        const event = events.find((ev) => ev.id === id && ev.senha === password)
         setEvent(event ?? null)
-    }, [id, password])
+    }, [id, password, events])
 
     const obterEvento = useCallback(async () => {
         if (!id || !password) return
