@@ -1,6 +1,6 @@
 import { useCallback } from 'react'
 
-const urlBase = process.env.NEXT_PUBLIC_API_URL
+const urlBase = '/api'
 
 export default function useAPI() {
     const httpGet = useCallback(async function (caminho: string) {
@@ -36,7 +36,6 @@ export default function useAPI() {
                     `Ocorreu um erro inesperado com status ${reposta.status}.`,
                     { cause: e }
                 )
-                console.error(error)
                 throw error
             }
             return null

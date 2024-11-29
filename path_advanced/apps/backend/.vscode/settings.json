@@ -3,6 +3,7 @@
         "datasource",
         "descricao",
         "deserializar",
+        "postgresql",
         "qtde",
         "sqlite"
     ],

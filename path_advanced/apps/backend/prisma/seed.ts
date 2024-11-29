@@ -1,6 +1,5 @@
 import { PrismaClient } from '@prisma/client'
 import { eventos } from 'core'
-import { exit } from 'process'
 
 async function seed() {
     const prisma = new PrismaClient()

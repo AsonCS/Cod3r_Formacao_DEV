@@ -16,7 +16,7 @@ export default function useApiEvents() {
                     setEvents(events)
                 }
             })
-            .catch((e) => console.error(e))
+            .catch(() => {})
     }, [httpGet])
 
     return events

@@ -4,13 +4,14 @@
     "private": true,
     "scripts": {
         "dev": "next dev --turbopack",
-        "build": "next build",
+        "build": "next lint && next build",
         "build:vercel": "cd ../../ && npm run build",
-        "start": "next start",
+        "start": "npm run build && next start",
         "start:vercel": "cd ../../ && npm run serve",
         "lint": "next lint"
     },
     "dependencies": {
+        "@prisma/client": "^6.0.0",
         "@radix-ui/react-toast": "^1.2.2",
         "@tabler/icons-react": "^3.23.0",
         "class-variance-authority": "^0.7.1",

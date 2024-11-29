@@ -5,12 +5,14 @@
         "conteudo",
         "Convit",
         "descricao",
+        "deserializar",
         "icone",
         "Informacao",
         "Informacoes",
         "messagem",
         "observacao",
         "outter",
+        "qtde",
         "tabler"
     ],
     "files.exclude": {
